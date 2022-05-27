@@ -3,11 +3,77 @@ body {
 }
 
 header {
-border: solid red;
+    border: solid red;
+}
+
+.location {
+    border: solid black;
+    background-color: rgb(204, 201, 201);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headerIconLoc {
+    height: 15px;
+    width: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.headerTitle,
+.headerText {
+    text-align: center;
+}
+
+.headerButton {
+    text-align: center;
+}
+
+.stepMenu {
+    border: solid green;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stepMenuLogo {
+    height: 15px;
+    width: 15px;
+}
+
+.restoChoice{
+    border: solid purple;
+    width: 85%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .imgRestoIndex {
     width: 50%;
     height: 50%;
     border: solid red;
+}
+
+.conteneurRestoChoice{
+    display: flex;
+    flex-direction: row;
+    border: solid pink;
+}
+
+.conteneurRestoTitle_Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid red;
+}
+
+.restoLikeIndex {
+    height: 15px;
+    width: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
