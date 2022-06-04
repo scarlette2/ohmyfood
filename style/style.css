@@ -6,6 +6,10 @@ header {
     border: solid white 20px;
 }
 
+.navHeaderIndex {
+    margin-bottom: 20%;
+}
+
 #headerLogo {
     width: 50%;
     margin-left: 25%;
@@ -21,11 +25,16 @@ header {
     justify-content: space-around;
 }
 
+.conteneurIconLoc {
+    display: flex;
+    flex-direction: row;
+}
+
 .headerIconLoc {
-    height: 15px;
     width: 15px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 20px;
 }
 
 .conteneurHeader {
@@ -43,7 +52,8 @@ header {
     text-align: center;
 }
 
-.btnPrimary {
+.btnPrimary,
+.btnPrimaryMenu {
     background: linear-gradient(-70deg, rgba(161, 90, 219, 255), rgba(233, 114, 218, 255));
     height: 50px;
     width: 200px;
@@ -52,13 +62,20 @@ header {
     border: solid rgba(234, 234, 234, 255);
 }
 
+.navFonctionnement {
+    margin-bottom: 30%;
+}
+
+.titleFonctionnement {
+    margin-left: 4%;
+}
+
 .stepMenu {
     border: solid rgba(246, 246, 246, 255);
     background-color: rgba(246, 246, 246, 255);
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 90%;
     border-radius: 20px;
     margin-left: auto;
@@ -66,13 +83,20 @@ header {
 }
 
 .stepNumber {
-    border: solid rgba(147, 86, 220, 255);
+    order: solid rgba(147, 86, 220, 255);
     width: 30px;
     height: 30px;
     text-align: center;
     border-radius: 50px;
     background-color: rgba(147, 86, 220, 255);
-    color: white
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15%;
+}
+
+.number {
+    margin-top: 5px;
 }
 
 .stepMenuLogo {
@@ -80,6 +104,7 @@ header {
     width: 15px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 15%;
 }
 
 .navRestorants {
@@ -108,22 +133,57 @@ header {
     flex-direction: row;
 }
 
-.conteneurRestoTitle_Text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.restoChoiceTitle {
+    margin-bottom: 5px;
+    margin-left: 18px;
+}
+
+.restoChoiceText {
+    margin-top: 0px;
+    margin-left: 18px;
+
 }
 
 .restoLikeIndex {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 10%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 /* menu 1 -----------------------------------------------------------------------------------------------------*/
+
+.navRestorants {
+    padding-top: 20%;
+}
+
+.navRestoTitle {
+    margin-left: 5%;
+}
+
+.pictureRestoIndex {
+    height: 190px;
+}
+
+.greenBox {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(153,226,208,255);
+    width: 90px;
+    height: 30px;
+    color: rgba(0,135,102,255);
+    bottom: 190px;
+    text-align: center;
+    left: 70%;
+    border-radius: 2px;
+
+}
+
+.greenBoxText {
+    font-size: 18px;
+}
 
 .imageLogoMenu {
     width: 50%;
@@ -151,14 +211,52 @@ header {
     top: -30px;
 }
 
+.titleNavMenu {
+    text-decoration: underline 2px;
+    color: rgba(123, 123, 123, 255);
+    margin-left: 30px;
+}
+
 .menu {
     border: solid rgb(227, 230, 231);
     background-color: white;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 25px;
+    height: 90px;
+}
+
+.conteneurTilte_Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleMenu {
+    font-size: 18px;
+    margin-left: 30px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.textMenu {
+    font-size: 18px;
+    margin-left: 30px;
+    width: 250px;
+    color: rgba(123, 123, 123, 255);
+    margin-top: 0px;
+}
+
+.priceMenu {
+    height: min-content;
+    margin-top: auto;
+    margin-left: auto;
+    transform: translateX(100%);
+    font-size: 20px;
+    margin-bottom: auto;
 }
 
 .containerTitle_Text {}
