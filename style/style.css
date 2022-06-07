@@ -28,6 +28,7 @@ header {
 .conteneurIconLoc {
     display: flex;
     flex-direction: row;
+    font-family: 'Roboto', sans-serif;;
 }
 
 .headerIconLoc {
@@ -48,6 +49,16 @@ header {
     background-color: rgba(246, 246, 246, 255);
 }
 
+.headerTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.headerText {
+    font-family: 'Roboto', sans-serif;
+}
+
 .headerButton {
     text-align: center;
 }
@@ -59,7 +70,18 @@ header {
     width: 200px;
     border-radius: 50px;
     color: white;
-    border: solid rgba(234, 234, 234, 255);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 255, .2);
+}
+
+.containerBtnMenu {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navFonctionnement {
@@ -68,6 +90,9 @@ header {
 
 .titleFonctionnement {
     margin-left: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .stepMenu {
@@ -107,7 +132,12 @@ header {
     margin-right: 15%;
 }
 
-.navRestorants {
+.stepMenuTitle {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.restoChoiceText.navRestorants {
     background-color: rgba(246, 246, 246, 255);
 }
 
@@ -141,7 +171,8 @@ header {
 .restoChoiceText {
     margin-top: 0px;
     margin-left: 18px;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .restoLikeIndex {
@@ -161,6 +192,10 @@ header {
 
 .navRestoTitle {
     margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 55px;
 }
 
 .pictureRestoIndex {
@@ -170,10 +205,10 @@ header {
 .greenBox {
     position: relative;
     z-index: 1;
-    background-color: rgba(153,226,208,255);
+    background-color: rgba(153, 226, 208, 255);
     width: 90px;
     height: 30px;
-    color: rgba(0,135,102,255);
+    color: rgba(0, 135, 102, 255);
     bottom: 190px;
     text-align: center;
     left: 70%;
@@ -198,6 +233,12 @@ header {
     z-index: 0;
 }
 
+.entree,
+.plat,
+.dessert {
+    margin-bottom: 50px;
+}
+
 .containerNavMenu {
     background-color: rgb(227, 230, 231);
     width: 98%;
@@ -215,6 +256,9 @@ header {
     text-decoration: underline 2px;
     color: rgba(123, 123, 123, 255);
     margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .menu {
@@ -227,7 +271,7 @@ header {
     height: 90px;
 }
 
-.conteneurTilte_Text {
+.containerTitle_Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,8 +282,9 @@ header {
     margin-left: 30px;
     width: 250px;
     height: 30px;
-    margin-bottom: 0px;
-    margin-top: 3px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .textMenu {
@@ -248,6 +293,10 @@ header {
     width: 250px;
     color: rgba(123, 123, 123, 255);
     margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .priceMenu {
@@ -255,8 +304,10 @@ header {
     margin-top: auto;
     margin-left: auto;
     transform: translateX(100%);
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .containerTitle_Text {}
