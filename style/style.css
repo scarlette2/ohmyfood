@@ -1,425 +1,721 @@
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 .whitePage {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: hsla(0, 0%, 100%, .9);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-name: appear;
-    animation-duration: 3s;
-    opacity: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  opacity: 0;
+  z-index: 0;
+  display: none;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 1;
+    top: 0;
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 0;
+  }
+}
 
 @keyframes appear {
-    0% {
-        opacity: 1;
-        top: 0;
-    }
-
-    100% {
-        opacity: 0;
-        z-index: -10;
-        top: 100;
-        position: relative;
-    }
+  0% {
+    opacity: 1;
+    top: 0;
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 0;
+  }
 }
 
 .lds-ring {
-    display: flex;
-    width: 5rem;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid rgb(214, 41, 41);
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #ab67e2 transparent transparent transparent;
-
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #d62929;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ab67e2 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes lds-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 header {
-    border: solid white 20px;
+  border: solid white 20px;
 }
 
 .navHeaderIndex {
-    margin-bottom: 20%;
+  margin-bottom: 20%;
 }
 
 #headerLogo {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .location {
-    border: solid rgba(234, 234, 234, 255)black;
-    background-color: rgba(234, 234, 234, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  border: solid #eaeaea black;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .conteneurIconLoc {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Roboto', sans-serif;
-    ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto', sans-serif;
 }
 
 .headerIconLoc {
-    width: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20px;
+  width: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
 }
 
 .conteneurHeader {
-    background-color: rgba(246, 246, 246, 255);
-    border: solid rgba(246, 246, 246, 255) 30px;
-    position: relative;
+  background-color: #f6f6f6;
+  border: solid #f6f6f6 30px;
+  position: relative;
 }
 
 .headerTitle,
 .headerText {
-    text-align: center;
-    background-color: rgba(246, 246, 246, 255);
+  text-align: center;
+  background-color: #f6f6f6;
 }
 
 .headerTitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .headerText {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .headerButton {
-    text-align: center;
+  text-align: center;
 }
 
 .btnPrimary,
 .btnPrimaryMenu {
-    background: linear-gradient(-70deg, rgba(161, 90, 219, 255), rgba(233, 114, 218, 255));
-    height: 50px;
-    width: 200px;
-    border-radius: 50px;
-    color: white;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    box-shadow: 10px 10px 20px 1px rgba(0, 0, 255, .2);
+  background: linear-gradient(-70deg, #a15adb, #e972da);
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(0, 0, 255, 0.2);
+          box-shadow: 10px 10px 20px 1px rgba(0, 0, 255, 0.2);
 }
 
 .btnPrimary:active,
 .btnPrimaryMenu:active {
-    background: linear-gradient(-70deg, #ab67e2, #f175e1);
-    box-shadow: 10px 10px 10px 4px rgba(0, 0, 255, .2);
+  background: linear-gradient(-70deg, #ab67e2, #f175e1);
+  -webkit-box-shadow: 10px 10px 10px 4px rgba(0, 0, 255, 0.2);
+          box-shadow: 10px 10px 10px 4px rgba(0, 0, 255, 0.2);
 }
 
 .containerBtnMenu {
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navFonctionnement {
-    margin-bottom: 30%;
+  margin-bottom: 10%;
+  position: relative;
 }
 
 .titleFonctionnement {
-    margin-left: 4%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+  margin-left: 4%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .stepMenu {
-    border: solid rgba(246, 246, 246, 255);
-    background-color: rgba(246, 246, 246, 255);
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  border: solid #f6f6f6;
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stepNumber {
-    order: solid rgba(147, 86, 220, 255);
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 50px;
-    background-color: rgba(147, 86, 220, 255);
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 15%;
+  -webkit-box-ordinal-group: NaN;
+      -ms-flex-order: solid #9356dc;
+          order: solid #9356dc;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #9356dc;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15%;
 }
 
 .number {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .stepMenuLogo {
-    height: 15px;
-    width: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 15%;
+  height: 15px;
+  width: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15%;
 }
 
 .stepMenuTitle {
-    font-size: 18px;
-    font-weight: lighter;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
 }
 
 .restoChoiceText.navRestorants {
-    background-color: rgba(246, 246, 246, 255);
+  background-color: #f6f6f6;
+}
+
+.navRestorants {
+  position: relative;
 }
 
 .restoChoice {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    background-color: white;
-    border-radius: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .imgRestoIndex {
-    object-fit: cover;
-    width: 100%;
-    height: 180px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .conteneurRestoChoice {
-    display: flex;
-    flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .restoChoiceTitle {
-    margin-bottom: 5px;
-    margin-left: 18px;
+  margin-bottom: 5px;
+  margin-left: 18px;
 }
 
 .restoChoiceText {
-    margin-top: 0px;
-    margin-left: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+  margin-top: 0px;
+  margin-left: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 .restoLikeIndex {
-    height: 25px;
-    width: 25px;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: auto;
-    margin-bottom: auto;
+  height: 25px;
+  width: 25px;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-/* menu 1 -----------------------------------------------------------------------------------------------------*/
-
-.navRestorants {
-    padding-top: 20%;
+/* menu  -----------------------------------------------------------------------------------------------------*/
+.headerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navRestoTitle {
-    margin-left: 5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 55px;
-}
-
-.pictureRestoIndex {
-    height: 190px;
-}
-
-.greenBox {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(153, 226, 208, 255);
-    width: 90px;
-    height: 30px;
-    color: rgba(0, 135, 102, 255);
-    bottom: 190px;
-    text-align: center;
-    left: 70%;
-    border-radius: 2px;
-
-}
-
-.greenBoxText {
-    font-size: 18px;
+.arrow {
+  width: 35px;
+  height: 35px;
 }
 
 .imageLogoMenu {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+  width: 50%;
+  margin-left: 18%;
+}
+
+.navRestorants {
+  padding-top: 20%;
+}
+
+.navRestoTitle {
+  margin-left: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 55px;
+}
+
+.pictureRestoIndex {
+  height: 190px;
+}
+
+.greenBox {
+  position: relative;
+  z-index: 1;
+  background-color: #99e2d0;
+  width: 90px;
+  height: 30px;
+  color: #008766;
+  bottom: 190px;
+  text-align: center;
+  left: 70%;
+  border-radius: 2px;
+}
+
+.greenBoxText {
+  font-size: 18px;
 }
 
 #imageMenu1 {
-    object-fit: cover;
-    width: 100%;
-    height: 50%;
-    z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
 }
 
 .entree,
 .plat,
 .dessert {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .containerNavMenu {
-    background-color: rgb(227, 230, 231);
-    width: 98%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border: solid rgb(227, 230, 231);
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 2;
-    position: relative;
-    top: -30px;
+  background-color: #e3e6e7;
+  width: 98%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: solid #e3e6e7;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  position: relative;
+  top: -30px;
 }
 
 .titleNavMenu {
-    text-decoration: underline 2px;
-    color: rgba(123, 123, 123, 255);
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
+  color: #7b7b7b;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.underline {
+  width: 45px;
+  background-color: #2dcc98;
+  height: 3px;
+  margin-left: 30px;
+  margin-top: -15px;
+  margin-bottom: 30px;
 }
 
 .menu {
-    border: solid rgb(227, 230, 231);
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 25px;
-    height: 90px;
-    overflow: hidden;
+  border: solid #e3e6e7;
+  background-color: white;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 25px;
+  height: 90px;
+  overflow: hidden;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
-.containerTitle_Text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: solid blue;
-    overflow: hidden;
-}
-
-.titleMenu {
-    width: 250px;
-    height: 30px;
-    margin-bottom: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-top: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-}
-
-.textMenu {
-    width: 250px;
-    color: rgba(123, 123, 123, 255);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    overflow: hidden;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.priceMenu {
-    height: min-content;
-    margin-top: auto;
-    margin-left: auto;
-    font-size: 15px;
-    margin-bottom: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.blue {
-    width: 50px;
-    height: 90px;
-    background-color: blue;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transform: translateX(100%);
-    animation-name: decale;
-    animation: duration 5s;
-}
-
-@keyframes decale {
+/*@keyframes appear {
     0% {
-        width: 0px;
-    }
-
-    50% {
-        translate: 50%;
+        transform: translateY(-100px);
+        opacity: 0;
     }
 
     100% {
-        translate: 0%;
+        opacity: 1;
+        transform: translateY(0);
     }
+}*/
+.containerTitle_Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-left: 10px;
 }
+
+.titleMenu {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.textMenu {
+  width: 250px;
+  color: #7b7b7b;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
+}
+
+.priceMenu {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 15px;
+  margin-bottom: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.blue {
+  width: 70px;
+  height: 90px;
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu:active .blue {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.menu:active .priceMenu {
+  margin-right: 30px;
+}
+
+.menu:active .titleMenu {
+  width: 50%;
+}
+
+.menu:active .textMenu {
+  width: 90%;
+}
+
+.svg-check {
+  width: 20px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50%;
+}
+
+/*-------------------------desktop----------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  header {
+    border: solid white 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #headerLogo {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navHeaderIndex {
+    margin-bottom: 10%;
+  }
+  .headerTitle {
+    font-size: 25px;
+  }
+  .headerText {
+    font-size: 20px;
+  }
+  .btnPrimary {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+  }
+  .navFonctionnement {
+    margin-bottom: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 30px;
+  }
+  .titleFonctionnement {
+    margin-left: 4%;
+    font-size: 20px;
+  }
+  .stepMenu {
+    width: 40%;
+    margin-left: 4%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 0%;
+  }
+  .stepNumber {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 0%;
+  }
+  .number {
+    margin-top: 1;
+    font-family: 'Roboto', sans-serif;
+  }
+  .stepMenuLogo {
+    height: 20px;
+    width: 20px;
+    margin-right: 0%;
+  }
+  .stepMenuTitle {
+    font-size: 18px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .navRestorants {
+    padding: 1%;
+    background-color: #f4f4f4;
+    margin-top: 10%;
+  }
+  .conteneurRestoFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .restoChoice {
+    width: 35%;
+  }
+  .pictureRestoIndex {
+    height: 400px;
+  }
+  .imgRestoIndex {
+    height: 400px;
+  }
+  .navRestorants {
+    padding: 5%;
+  }
+  .stepMenu {
+    width: 50%;
+    margin-left: 4%;
+  }
+  .pictureRestoIndex {
+    height: 300px;
+  }
+  .imgRestoIndex {
+    height: 300px;
+  }
+  .conteneurRestoChoice {
+    height: 120px;
+  }
+  .conteneurRestoTitle_Text {
+    width: 50%;
+  }
+  .restoChoiceTitle {
+    font-size: 20px;
+  }
+  .restoChoiceText {
+    font-size: 18px;
+  }
+  .greenBox {
+    bottom: 300px;
+    left: 75%;
+  }
+  .menu:hover .blue {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .menu:hover .priceMenu {
+    margin-right: 30px;
+  }
+  .menu:hover .titleMenu {
+    width: 90%;
+  }
+  .menu:hover .textMenu {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
