@@ -250,6 +250,7 @@ header {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .stepNumber {
@@ -265,6 +266,7 @@ header {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 15%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .number {
@@ -291,6 +293,7 @@ header {
 
 .navRestorants {
   position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
 .restoChoice {
@@ -346,6 +349,38 @@ header {
   margin-right: 10%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+/*-------footer----------------------------------------*/
+footer {
+  background-color: black;
+  border: solid 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.containerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  margin-left: 20px;
+}
+
+.footerIcon {
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.footerText {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 /* menu  -----------------------------------------------------------------------------------------------------*/
@@ -570,6 +605,38 @@ header {
   margin-top: 50%;
 }
 
+/*-------------------------tablette---------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .navHeaderIndex {
+    margin-bottom: 10%;
+  }
+  .navRestorants {
+    padding-top: 0%;
+  }
+  .titleFonctionnement {
+    margin-left: 20%;
+  }
+  .stepMenu {
+    width: 60%;
+  }
+  .navRestoTitle {
+    margin-left: 40%;
+  }
+  .restoChoice {
+    width: 70%;
+  }
+  .pictureRestoIndex {
+    height: 290px;
+  }
+  .imgRestoIndex {
+    height: 280px;
+  }
+  .greenBox {
+    bottom: 280px;
+    left: 83%;
+  }
+}
+
 /*-------------------------desktop----------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px) {
   header {
@@ -678,6 +745,9 @@ header {
   .navRestorants {
     padding: 5%;
   }
+  .navRestoTitle {
+    margin-left: 8%;
+  }
   .stepMenu {
     width: 50%;
     margin-left: 4%;
@@ -716,6 +786,63 @@ header {
   }
   .menu:hover .textMenu {
     width: 90%;
+  }
+  /*-------------------------menu-------------------------------------------*/
+  .headerMenu {
+    height: 70px;
+  }
+  .imageLogoMenu {
+    width: 30%;
+    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #imageMenu1 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+    z-index: 0;
+  }
+  .containerNavMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .titleNavMenu {
+    width: 5%;
+  }
+  .entree,
+  .plat,
+  .dessert {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .entree {
+    margin-top: 50px;
+  }
+  .underline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: -9.5%;
+  }
+  .menu {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */
