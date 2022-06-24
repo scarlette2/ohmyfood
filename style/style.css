@@ -538,25 +538,38 @@ footer {
   margin-bottom: 25px;
   height: 90px;
   overflow: hidden;
-  -webkit-animation-name: appear;
-          animation-name: appear;
+  -webkit-animation-name: slide;
+          animation-name: slide;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
 }
 
-/*
-@keyframes appear {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
-*/
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .containerTitle_Text {
   display: -webkit-box;
   display: -ms-flexbox;
