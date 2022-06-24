@@ -25,7 +25,6 @@ body {
           animation-duration: 3s;
   opacity: 0;
   z-index: 0;
-  /*display: none;*/
 }
 
 @-webkit-keyframes appear {
@@ -351,6 +350,47 @@ header {
   margin-bottom: auto;
 }
 
+#identifiant1:active,
+#identifiant2:active,
+#identifiant3:active,
+#identifiant4:active {
+  fill: url(#MyGradient3);
+  -webkit-animation-name: heart;
+          animation-name: heart;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    fill: url(#MyGradient);
+  }
+  25% {
+    fill: url(#MyGradient2);
+  }
+  75% {
+    fill: url(#MyGradient3);
+  }
+  100% {
+    fill: url(#MyGradient3);
+  }
+}
+
+@keyframes heart {
+  0% {
+    fill: url(#MyGradient);
+  }
+  25% {
+    fill: url(#MyGradient2);
+  }
+  75% {
+    fill: url(#MyGradient3);
+  }
+  100% {
+    fill: url(#MyGradient3);
+  }
+}
+
 /*-------footer----------------------------------------*/
 footer {
   background-color: black;
@@ -504,7 +544,8 @@ footer {
           animation-duration: 3s;
 }
 
-/*@keyframes appear {
+/*
+@keyframes appear {
     0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -514,7 +555,8 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}*/
+}
+*/
 .containerTitle_Text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,6 +828,9 @@ footer {
   }
   .menu:hover .textMenu {
     width: 90%;
+  }
+  #identifiant3:active {
+    fill: #a15adb;
   }
   /*-------------------------menu-------------------------------------------*/
   .headerMenu {
