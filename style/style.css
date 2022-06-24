@@ -652,12 +652,10 @@ footer {
   width: 90%;
 }
 
-.svg-check {
-  width: 20px;
-  height: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50%;
+.footerTitle {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  margin-left: 15px;
 }
 
 /*-------------------------tablette---------------------------------------------------*/
