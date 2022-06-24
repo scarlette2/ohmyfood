@@ -17,9 +17,7 @@ body {
     animation-duration: 3s;
     opacity: 0;
     z-index: 0;
-    /*display: none;*/
 }
-
 
 @keyframes appear {
     0% {
@@ -286,6 +284,36 @@ header {
     margin-bottom: auto;
 }
 
+#identifiant1:active,
+#identifiant2:active,
+#identifiant3:active,
+#identifiant4:active {
+    fill: url(#MyGradient3);
+    animation-name: heart;
+    animation-duration: 0.8s;
+}
+
+
+@keyframes heart {
+    0% {
+        fill: url(#MyGradient)
+    }
+
+    25% {
+        fill: url(#MyGradient2)
+    }
+
+    75% {
+        fill: url(#MyGradient3);
+    }
+
+    100% {
+        fill: url(#MyGradient3)
+    }
+
+}
+
+
 /*-------footer----------------------------------------*/
 
 footer {
@@ -429,7 +457,8 @@ footer {
     animation-duration: 3s;
 }
 
-/*@keyframes appear {
+/*
+@keyframes appear {
     0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -439,8 +468,8 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-}*/
-
+}
+*/
 .containerTitle_Text {
     display: flex;
     flex-direction: column;
@@ -563,9 +592,6 @@ footer {
         bottom: 280px;
         left: 83%;
     }
-
-
-
 }
 
 
@@ -741,6 +767,10 @@ footer {
             width: 90%;
         }
 
+    }
+
+    #identifiant3:active {
+        fill: #a15adb;
     }
 
     /*-------------------------menu-------------------------------------------*/
