@@ -453,12 +453,12 @@ footer {
     margin-bottom: 25px;
     height: 90px;
     overflow: hidden;
-    animation-name: appear;
+    animation-name: slide;
     animation-duration: 3s;
 }
 
-/*
-@keyframes appear {
+
+@keyframes slide {
     0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -469,7 +469,7 @@ footer {
         transform: translateY(0);
     }
 }
-*/
+
 .containerTitle_Text {
     display: flex;
     flex-direction: column;
