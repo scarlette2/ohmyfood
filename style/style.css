@@ -350,7 +350,7 @@ header {
   margin-bottom: auto;
 }
 
-#identifiant1:active,
+#identifiant1:active, :hover,
 #identifiant2:active,
 #identifiant3:active,
 #identifiant4:active {
