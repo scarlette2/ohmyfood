@@ -521,6 +521,12 @@ footer {
     font-weight: bold;
 }
 
+.check1 {
+    width: 30px;
+    height: 30px;
+    /*margin-left: 50%;*/
+}
+
 .blue {
     width: 70px;
     height: 90px;
@@ -531,12 +537,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.check1 {
-    width: 30px;
-    height: 30px;
-    /*margin-left: 50%;*/
 }
 
 .menu:active {
