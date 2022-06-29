@@ -630,6 +630,12 @@ footer {
   font-weight: bold;
 }
 
+.check1 {
+  width: 30px;
+  height: 30px;
+  /*margin-left: 50%;*/
+}
+
 .blue {
   width: 70px;
   height: 90px;
@@ -647,12 +653,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.check1 {
-  width: 30px;
-  height: 30px;
-  /*margin-left: 50%;*/
 }
 
 .menu:active .blue {
