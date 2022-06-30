@@ -34,7 +34,7 @@ body {
     z-index: 1;
   }
   99% {
-    z-index: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 1;
@@ -49,7 +49,7 @@ body {
     z-index: 1;
   }
   99% {
-    z-index: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 1;
@@ -185,6 +185,7 @@ header {
 
 .headerText {
   font-family: 'Roboto', sans-serif;
+  color: #959595;
 }
 
 .headerButton {
@@ -193,7 +194,8 @@ header {
 
 .btnPrimary,
 .btnPrimaryMenu {
-  background: linear-gradient(-70deg, #a15adb, #e972da);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e972da), to(#a15adb));
+  background: linear-gradient(#e972da, #a15adb);
   height: 50px;
   width: 200px;
   border-radius: 50px;
@@ -207,9 +209,11 @@ header {
           box-shadow: 10px 10px 20px 1px rgba(0, 0, 255, 0.2);
 }
 
-.btnPrimary:active,
-.btnPrimaryMenu:active {
+.btnPrimary:hover,
+.btnPrimaryMenu:hover {
   background: linear-gradient(-70deg, #ab67e2, #f175e1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f175e1), to(#ab67e2));
+  background: linear-gradient(#f175e1, #ab67e2);
   -webkit-box-shadow: 10px 10px 10px 4px rgba(0, 0, 255, 0.2);
           box-shadow: 10px 10px 10px 4px rgba(0, 0, 255, 0.2);
 }
@@ -350,15 +354,16 @@ header {
   margin-bottom: auto;
 }
 
-#identifiant1:active,
-#identifiant2:active,
-#identifiant3:active,
-#identifiant4:active {
+#identifiant1:hover,
+#identifiant2:hover,
+#identifiant3:hover,
+#identifiant4:hover {
   fill: url(#MyGradient3);
   -webkit-animation-name: heart;
           animation-name: heart;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
+  stroke: white;
 }
 
 @-webkit-keyframes heart {
@@ -522,7 +527,7 @@ footer {
 
 .underline {
   width: 45px;
-  background-color: #2dcc98;
+  background-color: #99E2D0;
   height: 3px;
   margin-left: 30px;
   margin-top: -15px;
@@ -588,6 +593,7 @@ footer {
           justify-content: center;
   overflow: hidden;
   margin-left: 10px;
+  width: 100%;
 }
 
 .titleMenu {
@@ -601,7 +607,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 80%;
+  width: 100%;
 }
 
 .textMenu {
@@ -615,14 +621,14 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 85%;
+  width: 90%;
 }
 
 .priceMenu {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  margin-top: auto;
+  margin-top: 55px;
   margin-left: auto;
   font-size: 15px;
   margin-bottom: auto;
@@ -630,10 +636,36 @@ footer {
   font-weight: bold;
 }
 
-.check1 {
+.menu:hover .check1 {
   width: 30px;
   height: 30px;
   /*margin-left: 50%;*/
+  -webkit-animation-name: turnCheck;
+          animation-name: turnCheck;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+}
+
+@-webkit-keyframes turnCheck {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes turnCheck {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .blue {
@@ -655,26 +687,44 @@ footer {
           justify-content: center;
 }
 
-.menu:active .blue {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+.menu:hover .blue {
+  -webkit-animation-name: slideBlue;
+          animation-name: slideBlue;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
-.menu:active .priceMenu {
-  margin-right: 30px;
-}
-
-.menu:active .titleMenu {
+.menu:hover .containerTitle_Text {
   width: 50%;
 }
 
-.menu:active .textMenu {
-  width: 90%;
+@-webkit-keyframes slideBlue {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slideBlue {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 footer {
   position: relative;
   text-decoration: none;
+  background-color: #353535;
+  border-color: #353535;
 }
 
 .footerTitle {
