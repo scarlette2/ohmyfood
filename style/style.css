@@ -634,6 +634,7 @@ footer {
   margin-bottom: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .menu:hover .check1 {
@@ -692,10 +693,16 @@ footer {
           animation-name: slideBlue;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .menu:hover .containerTitle_Text {
   width: 50%;
+}
+
+.menu:hover .priceMenu {
+  margin-right: 25px;
 }
 
 @-webkit-keyframes slideBlue {
@@ -908,23 +915,33 @@ footer {
     bottom: 300px;
     left: 75%;
   }
-  .menu:hover .blue {
-    -webkit-transform: translateX(0%);
+  /*
+    .menu:hover {
+
+        .blue {
             transform: translateX(0%);
-  }
-  .menu:hover .priceMenu {
-    margin-right: 30px;
-  }
-  .menu:hover .titleMenu {
-    width: 90%;
-  }
-  .menu:hover .textMenu {
-    width: 90%;
-  }
-  #identifiant3:active {
-    fill: #a15adb;
-  }
-  /*-------------------------menu-------------------------------------------*/
+        }
+
+        .priceMenu {
+            margin-right: 30px;
+        }
+
+
+        .titleMenu {
+            width: 90%;
+        }
+
+        .textMenu {
+            width: 90%;
+        }
+
+    }
+
+    #identifiant3:active {
+        fill: #a15adb;
+    }
+
+    /*-------------------------menu-------------------------------------------*/
   .headerMenu {
     height: 70px;
   }
