@@ -525,19 +525,20 @@ footer {
     margin-bottom: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 
-.menu:hover{ 
+.menu:hover {
 
-.check1 {
-    width: 30px;
-    height: 30px;
-    /*margin-left: 50%;*/
-    animation-name: turnCheck;
-    animation-duration: 0.9s;
+    .check1 {
+        width: 30px;
+        height: 30px;
+        /*margin-left: 50%;*/
+        animation-name: turnCheck;
+        animation-duration: 0.9s;
+    }
 }
- }
 
 @keyframes turnCheck {
     0% {
@@ -565,10 +566,16 @@ footer {
     .blue {
         animation-name: slideBlue;
         animation-duration: 0.8s;
+        transform: translateX(0%);
+
     }
 
     .containerTitle_Text {
         width: 50%;
+    }
+
+    .priceMenu {
+        margin-right: 25px;
     }
 }
 
@@ -800,7 +807,7 @@ footer {
         left: 75%;
     }
 
-
+    /*
     .menu:hover {
 
         .blue {
