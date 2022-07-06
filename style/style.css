@@ -358,41 +358,35 @@ header {
 #identifiant2:hover,
 #identifiant3:hover,
 #identifiant4:hover {
-  fill: url(#MyGradient3);
-  -webkit-animation-name: heart;
-          animation-name: heart;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  fill: url(#horizontal3);
   stroke: white;
+  -webkit-animation-name: hearth;
+          animation-name: hearth;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
-@-webkit-keyframes heart {
+@-webkit-keyframes hearth {
   0% {
-    fill: url(#MyGradient);
+    fill: url(#horizontal);
   }
-  25% {
-    fill: url(#MyGradient2);
-  }
-  75% {
-    fill: url(#MyGradient3);
+  50% {
+    fill: url(#horizontal2);
   }
   100% {
-    fill: url(#MyGradient3);
+    fill: url(#horizontal3);
   }
 }
 
-@keyframes heart {
+@keyframes hearth {
   0% {
-    fill: url(#MyGradient);
+    fill: url(#horizontal);
   }
-  25% {
-    fill: url(#MyGradient2);
-  }
-  75% {
-    fill: url(#MyGradient3);
+  50% {
+    fill: url(#horizontal2);
   }
   100% {
-    fill: url(#MyGradient3);
+    fill: url(#horizontal3);
   }
 }
 
