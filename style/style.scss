@@ -291,33 +291,26 @@ header {
 #identifiant1:hover,
 #identifiant2:hover,
 #identifiant3:hover,
-#identifiant4:hover {
-    fill: url(#MyGradient3);
-    animation-name: heart;
-    animation-duration: 0.8s;
-    stroke: white;
+#identifiant4:hover{
+fill:url(#horizontal3);
+stroke: white;
+animation-name: hearth;
+animation-duration: 0.5s;
 }
 
-
-@keyframes heart {
+@keyframes hearth {
     0% {
-        fill: url(#MyGradient)
+        fill: url(#horizontal)
     }
 
-    25% {
-        fill: url(#MyGradient2)
-    }
-
-    75% {
-        fill: url(#MyGradient3);
+    50% {
+        fill: url(#horizontal2)
     }
 
     100% {
-        fill: url(#MyGradient3)
+        fill: url(#horizontal3)
     }
-
 }
-
 
 /*-------footer----------------------------------------*/
 
