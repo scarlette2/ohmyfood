@@ -237,6 +237,9 @@ header {
 .navRestorants {
     position: relative;
     font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+    padding-top: 10%;
+    padding-bottom: 8%;
 }
 
 .restoChoice {
@@ -291,11 +294,11 @@ header {
 #identifiant1:hover,
 #identifiant2:hover,
 #identifiant3:hover,
-#identifiant4:hover{
-fill:url(#horizontal3);
-stroke: white;
-animation-name: hearth;
-animation-duration: 0.5s;
+#identifiant4:hover {
+    fill: url(#horizontal3);
+    stroke: white;
+    animation-name: hearth;
+    animation-duration: 0.5s;
 }
 
 @keyframes hearth {
@@ -460,7 +463,43 @@ footer {
     animation-duration: 3s;
 }
 
+.entree,
+.plat,
+.dessert {
 
+    animation-name: slide;
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    25% {
+        .entree {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    75% {
+        .plat {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    100% {
+        .dessert {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/*
 @keyframes slide {
     0% {
         transform: translateY(-100px);
@@ -472,7 +511,7 @@ footer {
         transform: translateY(0);
     }
 }
-
+*/
 .containerTitle_Text {
     display: flex;
     flex-direction: column;
