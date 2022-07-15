@@ -373,6 +373,34 @@ footer {
     margin-left: 18%;
 }
 
+.titleHeart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleContainer{
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+}
+
+.titlesize{
+    font-family: 'Shrikhand', cursive; 
+}
+
+.sizeHeart{
+    width: 25px;
+    height: 25px;
+}
+
+.coeurMenu{
+    fill: #f4f4f4;
+}
+
 .navRestorants {
     padding-top: 20%;
 }
